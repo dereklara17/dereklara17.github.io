@@ -13,8 +13,10 @@ body {
 nav {
     background: rgb(224, 61, 20);
    margin: 0 auto;
+   margin-bottom: 20px;
     display: flex;
     padding: 10px;
+    border-radius: 50px;
 }
 h1 {
     display: flex;
@@ -59,4 +61,23 @@ main {
 }
 h2, h3 {
     margin: 0px;
+}
+
+#cooking{
+    height: auto;
+    margin-left: 1000px;
+    width: 250px;
+}
+#minecraft{
+    height: auto;
+    margin-left: 150px;
+    width: 20px;
+
+}
+
+#computer{
+    height: auto;
+    margin-left: 700px;
+    width: 250px;
+
 }

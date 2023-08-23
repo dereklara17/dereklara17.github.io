@@ -2,13 +2,16 @@ body {
     background: rgb(241, 186, 5);
     color: rgb(45, 45, 45);
     padding: 10px;
-    font-family: arial;
+    font-family: "Questrial", monospace;font-size: 18px;
+
 }
 #all-contents {
   max-width: 800px;
     margin: auto;
 }
-
+li:hover {
+    color: yellow;
+}
 /* navigation menu */
 nav {
     background: rgb(224, 61, 20);

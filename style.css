@@ -114,12 +114,22 @@ color:#961010;
    
             #portfolio li:hover {
                 background: #c98405;
-                -webkit-text-fill-color:#f7cf7a
+                -webkit-text-fill-color:#f7cf7a;
+                
             }
-   
+            #portfolio a:active{
+
+              color:rgb(255, 255, 255)
+
+            }
+            #portfolio a:visited{
+              
+              text-decoration: none;
+            }
             #portfolio a {
                 text-decoration: none;
                 color: #454545;
+                
             }
             @media screen and (min-width: 120px) and (max-width: 1080px) {
                 main {

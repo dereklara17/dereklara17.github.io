@@ -3,13 +3,12 @@ body {
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: "Questrial", monospace;font-size: 18px;
-
 }
 #all-contents {
   max-width: 800px;
     margin: auto;
 }
-li:hover {
+#hover {
     color: yellow;
 }
 /* navigation menu */
@@ -20,11 +19,12 @@ nav {
     display: flex;
     padding: 10px;
     border-radius: 50px;
+    font-family: "Questrial", monospace;font-size: 18px;
 }
 h1 {
     display: flex;
     align-items: center;
-    color: white;
+    color: rgb(255, 231, 16);
     flex: 1;
     margin: 0;
 }
@@ -38,6 +38,11 @@ h1 {
 a {
     text-decoration: none;
     color: #fff;
+}
+
+a:hover{
+
+  color:rgb(251, 255, 0)
 }
 
 /* main container area beneath menu */
@@ -64,8 +69,11 @@ main {
 }
 h2, h3 {
     margin: 0px;
+    color: rgb(230, 102, 102)
 }
-
+#para{
+color:#961010;
+}
 #cooking{
     height: 200px;
     margin-left: 200px;
@@ -106,6 +114,7 @@ h2, h3 {
    
             #portfolio li:hover {
                 background: #c98405;
+                -webkit-text-fill-color:#f7cf7a
             }
    
             #portfolio a {

@@ -64,22 +64,96 @@ h2, h3 {
 }
 
 #cooking{
-    height: auto;
-    margin-left: 100px;
-    width: 250px;
+    height: 200px;
+    margin-left: 200px;
+    width: 200px;
     border: 5px solid #e62020;
 }
 
 #hi{
-    height: auto;
-    margin-left: 100px;
-    width: 250px;
+    height: 200px;
+    margin-left: 200px;
+    width: 200px;
     border: 5px solid #e62020;
 }
 
 #mine{
-    height: auto;
-    margin-left: 200px;
-    width: 250px;
+    height: 200px;
+    margin-left: 150px;
+    width: 200px;
     border: 5px solid #e62020;
 }
+
+             /* portfolio styles */
+             .content h1 {
+                color: black;
+            }
+   
+            #portfolio {
+                list-style-type: none;
+                padding-left: 0;
+            }
+   
+            #portfolio li {
+                background: #ffcd60;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+   
+            #portfolio li:hover {
+                background: #c98405;
+            }
+   
+            #portfolio a {
+                text-decoration: none;
+                color: #454545;
+            }
+            @media screen and (min-width: 120px) and (max-width: 1080px) {
+                main {
+                  height: 100ch;
+                  zoom: 1.5;
+                  display: grid;
+                }
+  
+                h1 {
+                  font-size: 44px;
+                }
+  
+                h2 {
+                  font-size: 42px;
+                }
+  
+                h3 {
+                  font-size: 36px;
+                }
+  
+                #all-contents {
+                  height: 100ch;
+                  margin: none;
+                }
+  
+                a {
+                  font-size: 42px;
+                }
+  
+                .sidebar {
+                  margin-right: 0px;
+                  justify-content: center;
+                  align-items: center;
+                }
+  
+                .sidebar-img {
+                  width: 100%;
+                }
+  
+                p,
+                li {
+                  font-size: 24px;
+                }
+  
+                .content {
+                  align-content: center;
+                  justify-content: center;
+                }
+            }

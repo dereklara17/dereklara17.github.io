@@ -1,8 +1,10 @@
 body {
-    background: rgb(241, 186, 5);
     color: rgb(45, 45, 45);
     padding: 10px;
-    font-family: "Questrial", monospace;font-size: 18px;
+    background-image: url('https://database.faithfulpack.net/images/addons/packpngMenuPanorama/header.png');
+     background-size: cover;
+    font-family: "VT323", monospace;font-size: 30px;
+
 }
 #all-contents {
   max-width: 800px;
@@ -76,7 +78,7 @@ color:#961010;
 }
 #cooking{
     height: 200px;
-    margin-left: 200px;
+    margin-left: 500px;
     width: 200px;
     border: 5px solid #e62020;
 }
@@ -88,12 +90,6 @@ color:#961010;
     border: 5px solid #e62020;
 }
 
-#mine{
-    height: 200px;
-    margin-left: 150px;
-    width: 200px;
-    border: 5px solid #e62020;
-}
 
              /* portfolio styles */
              .content h1 {

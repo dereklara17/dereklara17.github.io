@@ -28,12 +28,12 @@ $(function () {
      * Comment the lines out to remove the grid
      */
 
-   //  for (let i = 100; i < canvas.width; i += 100) {
+   // for (let i = 100; i < canvas.width; i += 100) {
      //createPlatform(i, canvas.height, -1, -canvas.height);
-    // }
+     //}
      //for (let i = 100; i < canvas.height; i += 100) {
-       //createPlatform(canvas.width, i, -canvas.width, -1);
-    // }
+     // createPlatform(canvas.width, i, -canvas.width, -1);
+    //}
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -73,12 +73,27 @@ $(function () {
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-    createCannon("left",650, 66, 100, 100);
+    createCannon("left",650, 66, 100, 75);
     createCannon("top",300, 2587,20, 200);
     createCannon("top",600, 2255,20, 200);
     createCannon("top",900, 2659,20, 200);
     createCannon("top",1200, 2721,20, 200);
-    createCannon("right",765, 66, 100, 100);
+    createCannon("right",765, 66, 100, 72);
+    createCannon("bottom", 0, 100000000000);
+    createCannon("bottom", 100, 100000000000,0,0);
+    createCannon("bottom", 200, 100000000000,0,0);
+    createCannon("bottom", 300, 100000000000,0,0);
+    createCannon("bottom", 400, 100000000000,0,0);
+    createCannon("bottom", 500, 100000000000,0,0);
+    createCannon("bottom", 600, 100000000000,0,0);
+    createCannon("bottom", 700, 100000000000,0,0);
+    createCannon("bottom", 800, 100000000000,0,0);
+    createCannon("bottom", 900, 100000000000,0,0);
+    createCannon("bottom", 1100, 100000000000,0,0);
+    createCannon("bottom", 1200, 100000000000,0,0);
+    createCannon("bottom", 1300, 100000000000,0,0);
+
+    createCannon("bottom", 1000, 100000000000,0,0);
 
 
 

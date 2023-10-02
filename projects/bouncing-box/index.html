@@ -6,8 +6,8 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 100px;
-			height: 100px;
+			width: 125px;
+			height: 125px;
 			background-image: url("https://o.remove.bg/downloads/2f57d460-29e7-442b-ae96-c60385cc7c85/download-removebg-preview.png");
 			font-size: 200%;
 			background-size: cover;
@@ -49,15 +49,16 @@
 			var boardWidth = board.width();	// the maximum X-Coordinate of the screen
 
 			// Every 50 milliseconds, call the update Function (see below)
-			setInterval(update, 50);
+			var interval = setInterval(update, 50);
 			
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX) {
-				box.css("left", newPositionX);
-			}
+			function moveBoxTo(newPositionX, newPositionY) {
+   			   box.css('left', newPositionX);
+    			  box.css('top', newPositionY);
+			  }
 
 			// changes the text displayed on the Box
 			function changeBoxText(newText) {
@@ -72,7 +73,11 @@
 			
 			var positionX = 0
 			var points = 1
-			var speed = 0
+			var speed = 3
+			var positionY = 0;
+			var speedY = 3;
+			var boardHeight = jQuery(window).height(); 
+			var missClick = 0;
 			//var boardWidth = 250
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
@@ -81,7 +86,7 @@
 			*/
 			function update() {
 				
-				moveBoxTo(positionX);
+				moveBoxTo(positionX, positionY);
 				positionX = positionX + speed;
 				if (positionX > (boardWidth-73.5)) {
    					  // then do X, Y, and Z
@@ -93,6 +98,18 @@
 
 
 				}
+				positionY = positionY + speedY;
+				if (positionY > (boardHeight-73.5)) {
+   					  // then do X, Y, and Z
+						 speedY = speedY * -1;
+				}				
+		
+				if (positionY < 0){
+					speedY = speedY * -1;
+
+
+				
+				}
 			}
 
 			/* 
@@ -101,7 +118,18 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				positionX = 0;
+				var randNum = Math.random() * 1000;
+				if (randNum > 0 && randNum < boardWidth){
+
+				positionX = randNum;
+				
+				}
+				
+				if (randNum > 0 && randNum < boardHeight){
+				positionY = randNum;
+
+
+				}
 				changeBoxText(points);
 				points= points + 1
 				speed = speed + 3
@@ -113,7 +141,19 @@
 
 					speed -= 3
 				}
+				speedY = speedY + 3
+				if (speedY > 0){
+
+					speedY += 3
+				}
+				else if (speedY < 0){
+
+					speedY -= 3
+				}
 			};
+			function endGame() {
+			clearInterval(interval);
+			}
 		})();
 	</script>
 </body>

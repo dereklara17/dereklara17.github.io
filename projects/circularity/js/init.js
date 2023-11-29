@@ -80,10 +80,10 @@ var init = function (window) {
                 circle.x = canvas.width;
             }
             if ( circle.y < 0 ) {
-                circle.x = canvas.height;
+                circle.y = canvas.height;
             }
             if ( circle.y > canvas.height ) {
-                circle.x = 0;
+                circle.y = 0;
             }
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
